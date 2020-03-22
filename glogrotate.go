@@ -77,8 +77,8 @@ func Start(option RotateOption) *glogRotate {
 		r.prefix = program
 	}
 
-	if EMPTY_DURATION == r.rotateInterval {
-		r.rotateInterval = DEFAULT_CLEAN_INTERNAL
+	if EMPTY_DURATION == r.cleanInterval {
+		r.cleanInterval = DEFAULT_CLEAN_INTERNAL
 	}
 
 	r.fillInfo = strings.Repeat(FILL_CHARACTOR, FILL_SIZE_BYTE)
