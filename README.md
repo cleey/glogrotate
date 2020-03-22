@@ -9,9 +9,7 @@ glogrotate (glog rotate) is a log clear and rotate for glog written in Go.
 
 # Usage
 ```
-import(
-    "github.com/cleey/glogrotate"
-)
+import "github.com/cleey/glogrotate"
 ```
 ## Example 1 · Recommend
 this example will rotate every hour(default) and clean the log files that creation time older than 24 hours.
