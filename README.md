@@ -8,15 +8,15 @@ glogrotate (glog rotate) is a log clear and rotate for glog written in Go.
 ```go get github.com/cleey/glogrotate```
 
 # Usage
-
-## Example 1 · Recommend
-this example will rotate every hour(default) and clean the log files that creation time older than 24 hours.
-
 ```
 import(
     "github.com/cleey/glogrotate"
 )
+```
+## Example 1 · Recommend
+this example will rotate every hour(default) and clean the log files that creation time older than 24 hours.
 
+```
 glogrotate.Start(glogrotate.RotateOption{
     Remain: time.Duration(time.Hour * 24),
 })
