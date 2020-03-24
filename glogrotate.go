@@ -94,8 +94,7 @@ func (r *glogRotate) rotater() {
 		if EMPTY_DURATION == r.rotateInterval {
 			// default rotate glog per hour
 			t := time.Now()
-			m := t.Minute()
-			if m == 0 {
+			if t.Minute() == 0 && t.Second() == 0 {
 				r.rotate()
 			}
 
